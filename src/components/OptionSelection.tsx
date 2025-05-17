@@ -75,7 +75,7 @@ const OptionSelection = ({ onOptionSelect, language = 'english' }) => {
       <div className={`transform transition-all duration-700 relative z-10 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-10'}`}>
         <div className="mb-2 flex items-center justify-center">
         
-            <img src="boc-logo.png" alt="BOC Logo" className="w-20 h-15" />
+            <img src="https://www.boc.lk/assets/images/logo/boc-logo.svg?id=e045f3ca1825662a951f1dafaa3b0d40" alt="BOC Logo" className="w-20 h-15" />
         </div>
         
         <h1 className="text-3xl font-bold text-center text-yellow-600 mb-2">
