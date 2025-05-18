@@ -35,12 +35,12 @@ const StepCard: React.FC<StepCardProps> = ({ step, language }) => {
       'enter-otp': <EnterOTPAnimation darkMode={false} />,
       'success-cardless': <SuccessAnimation darkMode={false} withCard={false} />
     };
-
+    
     return animations[image] || null;
   };
-
+  
   const animation = getStepAnimation(step.image);
-
+  
   return (
     <div className="w-full bg-white rounded-lg shadow-md overflow-hidden transition-all duration-500 animate-fade-in">
       <div className="bg-yellow-500 py-3 px-4">
@@ -51,7 +51,8 @@ const StepCard: React.FC<StepCardProps> = ({ step, language }) => {
       
       <div className="p-6">
         <div className="flex flex-col md:flex-row gap-6 items-center">
-          <div className="flex-shrink-0 w-48 h-48 bg-gray-100 rounded-lg flex items-center justify-center">
+          {/* Animation container with larger size on mobile */}
+          <div className="flex-shrink-0 w-64 h-64 md:w-48 md:h-48 bg-gray-100 rounded-lg flex items-center justify-center">
             {animation || getStepIcon(step.image, 96)}
           </div>
           
