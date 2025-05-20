@@ -103,7 +103,7 @@ const StepGuide: React.FC<StepGuideProps> = ({ option, language, onReset }) => {
     if (isAutoPlaying && currentStep < stepsData.length - 1) {
       autoPlayTimerRef.current = setTimeout(() => {
         setCurrentStep(currentStep + 1);
-      }, 4000);
+      }, 5000);
     }
 
     // Cleanup timer on unmount
